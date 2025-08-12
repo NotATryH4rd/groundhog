@@ -3,6 +3,7 @@ import numpy as np
 import tensorflow as tf
 import joblib
 
+#rahhhh
 # Load models & scalers
 model1 = tf.keras.models.load_model("model1.keras")
 model2 = tf.keras.models.load_model("model2.keras")
@@ -56,3 +57,4 @@ def predict():
 if __name__ == '__main__':
 
     app.run(debug=True)
+
