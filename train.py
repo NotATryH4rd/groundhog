@@ -22,7 +22,7 @@ rename_map = {
 df1.rename(columns=lambda x: rename_map.get(x.strip(), x.strip()), inplace=True)
 df2.rename(columns=lambda x: rename_map.get(x.strip(), x.strip()), inplace=True)
 
-input_features_1 = ['Temperature', 'Moisture']
+input_features_1 = ['Temperature', 'Humidity']
 input_features_2 = ['ph', 'EC']
 target_features = ['N', 'P', 'K']
 
@@ -71,5 +71,6 @@ joblib.dump(scaler_X1, "scaler_X1.pkl")
 joblib.dump(scaler_X2, "scaler_X2.pkl")
 joblib.dump(target_scaler_1, "target_scaler_1.pkl")
 joblib.dump(target_scaler_2, "target_scaler_2.pkl")
+
 
 print("✅ Models and scalers saved locally!")
