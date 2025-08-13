@@ -13,7 +13,7 @@ target_scaler_1 = joblib.load("target_scaler_1.pkl")
 target_scaler_2 = joblib.load("target_scaler_2.pkl")
 
 #features 
-input_features_1 = ['Temperature', 'Moisture']
+input_features_1 = ['Temperature', 'Humidity']
 input_features_2 = ['ph', 'EC']
 target_features = ['N', 'P', 'K']
 
@@ -57,4 +57,5 @@ def predict():
 if __name__ == '__main__':
 
     app.run(debug=True)
+
 
